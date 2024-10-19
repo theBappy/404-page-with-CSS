@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sofia+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: darkslategray;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 15rem;
+    font-family: 'Sofia Sans', sans-serif;
+}
+.sub-heading{
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+article{
+    margin-bottom: 1rem;
+    color:white;
+    text-align: center;
+    width: 80%;
+    font-family: 'Sofia Sans', sans-serif;
+}
+.btn{
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    text-transform: uppercase;
+    border: 2px solid rgb(3,91,125);
+}
+.btn:hover{
+    background-color: rgb(16, 118, 158);
+    color: white;
+}
+.active{
+    background-color: rgb(16, 118, 158);
+    color: white;
+}
+.active:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(3,91,125);
+}
+@media screen and (max-width: 430px){
+    .heading{
+        font-size: 10rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
